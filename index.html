@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Happy Birthday, Afifah</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <!-- Intro Screen for Music Autoplay -->
+    <div class="intro-screen" id="intro-screen">
+        <div class="intro-content">
+            <div class="neon-icon">✨</div>
+            <h2 class="intro-text">Halo AR. Ini JORS. Hope u Like it ya</h2>
+            <button class="neon-btn" id="enter-btn">Tap to Open</button>
+        </div>
+    </div>
+
+    <!-- Background Music -->
+    <audio id="bg-music" loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Music Toggle Button -->
+    <button id="music-toggle" class="music-toggle">
+        <span class="icon-music">🎵</span>
+    </button>
+
+    <div class="noise-overlay"></div>
+    
+    <!-- Canvas for Live Neon Particles -->
+    <canvas id="particle-canvas"></canvas>
+    
+    <div class="background-animation">
+        <div class="blob-container" id="bc-1"><div class="blob blob-1"></div></div>
+        <div class="blob-container" id="bc-2"><div class="blob blob-2"></div></div>
+        <div class="blob-container" id="bc-3"><div class="blob blob-3"></div></div>
+    </div>
+    
+    <div class="container">
+        <section class="screen title-screen">
+            <div class="content-wrapper align-center">
+                <h1 class="fade-in-text artistic-title">
+                    <span class="small-caps">Happy Birthday,</span>
+                    <span class="name">Afifah Ruhama Humairo</span>
+                </h1>
+                <div class="scroll-indicator">
+                    <span>Ini pesan dari joro, discroll kebawah ya er</span>
+                    <div class="arrow"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="screen message-screen">
+            <div class="content-wrapper align-left">
+                <p class="fade-in-text artistic-text">
+                    <span>Some people enter life loudly,</span>
+                    <span>and some leave meaning <em class="highlight">quietly</em></span>
+                    <span>in the hearts around them.</span>
+                    <span class="spacer"></span>
+                    <span class="small-caps">You are the second kind.</span>
+                </p>
+            </div>
+        </section>
+
+        <section class="screen message-screen">
+            <div class="content-wrapper align-right">
+                <p class="fade-in-text artistic-text">
+                    <span>I hope life becomes <em class="highlight" style="background-image: linear-gradient(to right, #4facfe, #00f2fe);">gentle</em> with you</span>
+                    <span>not only in moments of success,</span>
+                    <span>but also in the <em class="glow-word">unseen battles</em></span>
+                    <span>no one ever hears about.</span>
+                </p>
+            </div>
+        </section>
+
+        <section class="screen message-screen">
+            <div class="content-wrapper align-center">
+                <p class="fade-in-text artistic-text">
+                    <span>May you never lose the <em class="highlight" style="background-image: linear-gradient(to right, #ffb199, #ff0844);">softness</em></span>
+                    <span>of your heart while growing stronger,</span>
+                    <span>and may you always find people,</span>
+                    <span>places, and moments that remind you</span>
+                    <span>you’re <em class="glow-word">deeply cherished</em></span>
+                    <span>exactly as you are.</span>
+                </p>
+            </div>
+        </section>
+
+        <section class="screen message-screen">
+            <div class="content-wrapper align-left">
+                <p class="fade-in-text artistic-text">
+                    <span>You deserve a life that feels <em class="highlight" style="background-image: linear-gradient(to right, #f6d365, #fda085);">warm</em> to return to,</span>
+                    <span>dreams that do not exhaust you,</span>
+                    <span>and <em class="glow-word">happiness</em> that arrives</span>
+                    <span>without needing a reason.</span>
+                </p>
+            </div>
+        </section>
+
+        <section class="screen message-screen final-screen">
+            <div class="content-wrapper align-center">
+                <p class="fade-in-text artistic-text">
+                    <span class="small-caps" style="color:rgba(255,255,255,0.8)">And above all,</span>
+                    <span>I hope you never forget how much <em class="highlight">light</em></span>
+                    <span>you carry into the lives of others,</span>
+                    <span>even on days when you cannot see it yourself.</span>
+                </p>
+                <div class="heart-container">
+                    <div class="interactive-heart">✨💖✨</div>
+                    <div class="click-me-hint">Touch the magic</div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
